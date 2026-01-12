@@ -4,6 +4,7 @@ export interface TicketType {
   name: string;
   price: number;
   benefits: string[];
+  availableQuantity: number;
 }
 
 export interface SelectedTickets {

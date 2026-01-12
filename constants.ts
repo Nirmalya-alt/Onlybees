@@ -3,53 +3,59 @@ import { TicketType, EventDetails } from './types';
 
 export const TICKET_DATA: TicketType[] = [
   {
-    id: 'ga-earlybird',
-    name: 'GA (Early Bird)',
-    price: 799,
-    benefits: ['Entry only', 'Early bird discount']
-  },
-  {
-    id: 'ga-vip-earlybird',
-    name: 'GA VIP (Early Bird)',
-    price: 1399,
-    benefits: ['Exclusive front-row access', 'Early bird discount']
-  },
-  {
-    id: 'ga-phase2',
-    name: 'GA (Phase 2)',
+    id: "68eb5a2a24634f327a1bc4f1",
+    name: "GA (Phase 2)",
     price: 1249,
-    benefits: ['Entry only', 'Easy access to the bar']
+    availableQuantity: 10,
+    benefits: ["Entry only", "Easy access to the bar"]
   },
   {
-    id: 'ga-vip-phase2',
-    name: 'GA VIP (Phase 2)',
+    id: "68f5c3d9b650f02fec29e4cc",
+    name: "GA VIP (Phase 2)",
     price: 1999,
-    benefits: ['Exclusive front-row near the stage', 'Easy access to the bar']
+    availableQuantity: 10,
+    benefits: ["Exclusive front-row near the stage", "Easy access to the bar"]
   },
   {
-    id: 'vvip-lounge',
-    name: 'VVIP Lounge / Round Table (per person)',
+    id: "68e0d4fccd444a2d9bce1100",
+    name: "VVIP Lounge/Round Table (per person)",
     price: 4999,
+    availableQuantity: 10,
     benefits: [
-      'Unlimited food & beverages (7pm–10pm)',
-      'Access to all areas',
-      'Exclusive round table service',
-      'Unlimited IMFL pouring',
-      'Clear stage view'
+      "Unlimited food & beverages for 180 minutes (7pm - 10 pm)",
+      "Access to all areas",
+      "Exclusive round table service",
+      "Unlimited IMFL pouring",
+      "Clear and unobstructed view of the stage"
     ]
   },
   {
-    id: 'vvip-table-6',
-    name: 'VVIP Round Table (upto 6 persons)',
+    id: "68e600ce6689f396f9775175",
+    name: "VVIP Round Table (upto 6 persons)",
     price: 24999,
+    availableQuantity: 10,
     benefits: [
-      'Exclusive round table',
-      'Unlimited food & beverages (7pm–10pm)',
-      'Access to all areas',
-      'Round table service',
-      'Unlimited IMFL pouring',
-      'Clear stage view'
+      "Exclusive round table",
+      "Unlimited food & beverages for 180 minutes (7pm - 10 pm)",
+      "Access to all areas",
+      "Round table service",
+      "Unlimited IMFL pouring",
+      "Clear and unobstructed view of the stage"
     ]
+  },
+  {
+    id: "68e0d44fcd444a2d9bce10f8",
+    name: "GA (Early Bird)",
+    price: 799,
+    availableQuantity: 0,
+    benefits: ["Entry only", "Easy access to the bar"]
+  },
+  {
+    id: "68e0d4edcd444a2d9bce10ff",
+    name: "GA VIP (Early Bird)",
+    price: 1399,
+    availableQuantity: -1000,
+    benefits: ["Exclusive front-row near the stage", "Easy access to the bar"]
   }
 ];
 
@@ -59,8 +65,7 @@ export const EVENT_DETAILS: EventDetails = {
   date: "October 25, 2025",
   time: "3:00 PM Onwards",
   city: "Shillong",
-  // Using a robust, high-quality concert image as a placeholder for the requested poster
-  posterUrl: "https://images.unsplash.com/photo-1540039155733-5bb30b53aa14?auto=format&fit=crop&w=1200&q=80"
+  posterUrl: "https://concerts.onlybees.in/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fmohombi_flyer.959f436b.png&w=1080&q=75"
 };
 
 export const LANDING_CONTENT = {
@@ -104,3 +109,4 @@ export const LANDING_CONTENT = {
 };
 
 export const ACCENT_COLOR = '#00FF38';
+export const SECONDARY_COLOR = '#1E1E1E';

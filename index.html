@@ -4,12 +4,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>OnlyBees Tickets</title>
+    <title>OnlyBees Tickets | Mohombi Live</title>
+    <link rel="icon" type="image/png" href="https://onlybees.in/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fbees-circle.75cd6f56.png&w=128&q=75">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
         theme: {
           extend: {
+            colors: {
+              brand: '#00FF38',
+              card: '#1E1E1E',
+            },
             fontFamily: {
               sans: ['Inter', 'sans-serif'],
             },
@@ -27,7 +32,6 @@
         background-color: #000000;
         color: #ffffff;
       }
-      /* Custom Animations for Tailwind CDN */
       @keyframes fade-in { from { opacity: 0; } to { opacity: 1; } }
       @keyframes slide-in-bottom { from { transform: translateY(100%); } to { transform: translateY(0); } }
       @keyframes slide-in-right { from { transform: translateX(100%); } to { transform: translateX(0); } }
@@ -43,6 +47,9 @@
       ::-webkit-scrollbar-track { background: #0a0a0a; }
       ::-webkit-scrollbar-thumb { background: #333; border-radius: 4px; }
       ::-webkit-scrollbar-thumb:hover { background: #00FF38; }
+      
+      .no-scrollbar::-webkit-scrollbar { display: none; }
+      .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
     </style>
   <script type="importmap">
 {
